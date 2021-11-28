@@ -9,22 +9,22 @@ public class AddFractionsTest {
     @Test
     public void zeroPlusZero() {
         Fraction sum = new Fraction(0).plus(new Fraction(0));
-        assertEquals(0, sum.intValue());
+        assertEquals(new Fraction(0), sum);
     }
     @Test
     public void nonZeroPlusZero() {
         final Fraction sum = new Fraction(3).plus(new Fraction(0));
-        assertEquals(3, sum.intValue());
+        assertEquals(new Fraction(3), sum);
     }
     @Test
     public void zeroPlusNonZero() {
         final Fraction sum = new Fraction(0).plus(new Fraction(5));
-        assertEquals(5, sum.intValue());
+        assertEquals(new Fraction(5), sum);
     }
     @Test
     public void positiveOperands() {
         final Fraction  sum = new Fraction(3).plus(new Fraction(4));
-        assertEquals(7, sum.intValue());
+        assertEquals(new Fraction(7), sum);
     }
     @Test
     public void negativeInputsNegativeOutput(){
@@ -35,7 +35,6 @@ public class AddFractionsTest {
     public void nonTrivialCommonDenominator(){
         final Fraction sum = new Fraction(1,5).plus(new Fraction(2,5));
         assertEquals(new Fraction(3,5), sum);
-
     }
 
 }
