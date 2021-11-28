@@ -18,11 +18,11 @@ public class Fraction {
     }
 
     public Fraction plus(Fraction that) {
-        return new Fraction(this.integerValue + that.integerValue, this.denominator);
+        return new Fraction(this.numerator + that.numerator, this.denominator);
     }
 
     public int intValue() {
-        return integerValue;
+        return numerator;
     }
 
 
