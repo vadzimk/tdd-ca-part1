@@ -18,18 +18,6 @@ public class Fraction {
         return new Fraction(this.numerator + that.numerator, this.denominator);
     }
 
-    public int intValue() {
-        return numerator;
-    }
-
-
-    public int getNumerator() {
-        return this.numerator;
-    }
-
-    public int getDenominator() {
-        return this.denominator;
-    }
 
     @Override
     public String toString(){
