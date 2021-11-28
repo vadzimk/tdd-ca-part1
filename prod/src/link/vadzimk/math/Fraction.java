@@ -15,7 +15,13 @@ public class Fraction {
     }
 
     public Fraction plus(Fraction that) {
-        return new Fraction(this.numerator + that.numerator, this.denominator);
+        if (this.denominator != that.denominator) {
+            // 1   1   3*1   2*1   5
+            // - + - = --- + --- = -
+            // 2   3   3*2   2*3   6
+            return new Fraction(this.numerator * that.denominator + that.numerator * this.denominator, this.denominator * that.denominator);
+        } else
+            return new Fraction(this.numerator + that.numerator, this.denominator);
     }
 
 
