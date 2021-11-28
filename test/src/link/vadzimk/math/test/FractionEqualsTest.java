@@ -31,7 +31,7 @@ public class FractionEqualsTest {
         assertNotEquals(new Fraction(6), new Fraction(5));
     }
 
-    @Ignore 
+    @Ignore
     @Test
     public void reduce() {
         assertEquals(new Fraction(3,4), new Fraction(6,8));
