@@ -32,8 +32,13 @@ public class FractionEqualsTest {
     }
 
     @Test
-    @Ignore("Waiting to implement reduction")
     public void reduce() {
         assertEquals(new Fraction(3,4), new Fraction(6,8));
+    }
+
+    @Test
+    public void negativeDenominator() {
+        assertEquals(new Fraction(1,2), new Fraction(-1,-2));
+        assertEquals(new Fraction(-1,2), new Fraction(1,-2));
     }
 }
