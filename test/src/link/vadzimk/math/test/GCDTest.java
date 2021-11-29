@@ -1,5 +1,6 @@
 package link.vadzimk.math.test;
 
+import link.vadzimk.math.NumberTheory;
 import org.junit.Test;
 
 import static link.vadzimk.math.NumberTheory.gcd;
@@ -31,7 +32,12 @@ public class GCDTest {
         assertEquals(2, gcd(6,8));
     }
 
-
+    @Test
+    public void zero() {
+        assertEquals(1, gcd(1, 0));
+        assertEquals(5, gcd(0, 5));
+        assertEquals(0, gcd(0, 0));
+    }
 }
 
 

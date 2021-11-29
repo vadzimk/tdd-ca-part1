@@ -66,7 +66,6 @@ public class AddFractionsTest {
     }
 
     @Test
-//    @Ignore("constructor not avoiding negative denominator yet")
     public void negativeEverywhere() {
         assertEquals(new Fraction(1,2), new Fraction(1,-4).plus(new Fraction(-3,-4)));
     }
