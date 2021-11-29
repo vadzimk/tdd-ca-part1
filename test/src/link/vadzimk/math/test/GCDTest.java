@@ -2,6 +2,7 @@ package link.vadzimk.math.test;
 
 import org.junit.Test;
 
+import static link.vadzimk.math.NumberTheory.gcd;
 import static org.junit.Assert.assertEquals;
 
 public class GCDTest {
@@ -30,14 +31,7 @@ public class GCDTest {
         assertEquals(2, gcd(6,8));
     }
 
-    private int gcd(int a, int b) {
-        while (b != 0) {
-            int t = b;
-            b = a % t;
-            a = t;
-        }
-        return Math.abs(a);
-    }
+
 }
 
 
